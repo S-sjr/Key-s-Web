@@ -488,9 +488,6 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     /* 为容器添加最小高度，确保图片有足够的显示空间 */
     min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #f8f8f8;
 }
 
@@ -530,6 +527,7 @@ body {
     background-color: rgba(0,0,0,0.5);
     transition: 0.3s ease;
     user-select: none;
+    z-index: 10;
 }
 
 .slide-next {
