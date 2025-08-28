@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhijian Ke‘s Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 这里是网站的头部信息，包含标题和CSS链接 -->
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ke's Portfolio</a>
+            <button class="hamburger-btn" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 - 图片轮播 -->
+    <section id="home" class="hero">
+        <!-- 轮播图片容器 -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="asset/img/主图/PJ 1.jpg" alt="Portfolio Main Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="asset/img/主图/PJ 2.jpg" alt="Portfolio Main Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="asset/img/主图/PJ 3.jpg" alt="Portfolio Main Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="asset/img/主图/PJ 4.jpg" alt="Portfolio Main Image 4">
+            </div>
+            <div class="slide fade">
+                <img src="asset/img/主图/PJ 5.jpg" alt="Portfolio Main Image 5">
+            </div>
+        </div>
+        
+        <!-- 轮播文字内容 -->
+        <div class="container hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my academic achievements and creative projects</p>
+            <a href="#projects" class="hero-btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- 项目1 -->
+                <div class="project-card">
+                    <a href="project_01.html">
+                        <img src="asset/img/主图/PJ 1.jpg" alt="BioCell Pavilion" class="project-img">
+                        <h3>BioCell Pavilion</h3>
+                        <p>Architecture Studio - Australian National Botanic Gardens</p>
+                    </a>
+                </div>
+                
+                <!-- 项目2 -->
+                <div class="project-card">
+                    <a href="project_02.html">
+                        <img src="asset/img/主图/PJ 2.jpg" alt="IMBUE" class="project-img">
+                        <h3>IMBUE</h3>
+                        <p>Architecture Laboratory - City Hill Water-Based Installation</p>
+                    </a>
+                </div>
+                
+                <!-- 项目3 -->
+                <div class="project-card">
+                    <a href="project_03.html">
+                        <img src="asset/img/主图/PJ 3.jpg" alt="Resonance" class="project-img">
+                        <h3>Resonance</h3>
+                        <p>Architecture Studio 3 - Woden Mural Cultural Space</p>
+                    </a>
+                </div>
+                
+                <!-- 项目4 -->
+                <div class="project-card">
+                    <a href="project_04.html">
+                        <img src="asset/img/主图/PJ 4.jpg" alt="Helix" class="project-img">
+                        <h3>Helix</h3>
+                        <p>Architecture Studio - Canberra Civic Forum</p>
+                    </a>
+                </div>
+                
+                <!-- 项目5 -->
+                <div class="project-card">
+                    <a href="project_05.html">
+                        <img src="asset/img/主图/PJ 5.jpg" alt="Hidden Garden" class="project-img">
+                        <h3>Hidden Garden</h3>
+                        <p>Art Gallery - Chaoyang District, Beijing</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 渲染图片集 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Render Gallery</h2>
+            <p>Explore my collection of architectural renderings showcasing various projects and design concepts.</p>
+            <div class="gallery-preview">
+                <div class="gallery-grid-preview">
+                    <!-- 缩略图预览 -->
+                    <div class="gallery-preview-item"><img src="asset/img/renderPictures/微信图片_20250828154615_136_119.png" alt="Gallery Preview"></div>
+                    <div class="gallery-preview-item"><img src="asset/img/renderPictures/微信图片_20250828154627_137_119.jpg" alt="Gallery Preview"></div>
+                    <div class="gallery-preview-item"><img src="asset/img/renderPictures/微信图片_20250828154628_138_119.jpg" alt="Gallery Preview"></div>
+                    <div class="gallery-preview-item"><img src="asset/img/renderPictures/微信图片_20250828154628_139_119.jpg" alt="Gallery Preview"></div>
+                </div>
+                <a href="render_gallery.html" class="btn gallery-btn">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-flex-container">
+                    <img src="asset/img/avatar.jpg" alt="Zhijian Ke的个人照片" class="profile-img">
+                    <div class="bio">
+                        <h3>Zhijian Ke</h3>
+                    <p>Recent Master of Architecture graduate with hands-on experience in urban regeneration, residential renovation, healthcare design, and landscape planning. Skilled in integrating local culture, site context, and modern construction technologies to create thoughtful, sustainable architectural solutions.</p>
+                    </div>
+                </div>
+                <div class="resume-sections">
+                            <div class="resume-section">
+                                <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                                <ul>
+                                    <li>07/2025 Master of Architecture - <strong>University of Canberra</strong>, Canberra, ACT</li>
+                                    <li>09/2023 Bachelor of The Built Environment (Architecture) - <strong>University of Canberra</strong>, Canberra, ACT</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="resume-section">
+                                <h4><i class="fas fa-briefcase"></i> Work Experience</h4>
+                                <ul>
+                                    <p><strong>11/2023 - 01/2024 Architecture Intern Xiamen University Architectural Design and Research Institute</strong></p>
+                                    <li>Contributed to urban regeneration projects and residential community renovation</li>
+                                    <li>Assisted in nursing home ward design and 3D visualizations</li>
+                                    <li>Supported community service center revitalization and public park planning</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="resume-section">
+                                <h4><i class="fas fa-pencil-ruler"></i> Skills</h4>
+                                <ul>
+                                    <li>Urban design & planning</li>
+                                    <li>3D visualization & rendering</li>
+                                    <li>Spatial analysis & community engagement</li>
+                                    <li>Technical drawing & design collaboration</li>
+                                    <li>Software: SketchUp, Revit, AutoCAD, Enscape, Adobe Creative Suite</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="resume-section">
+                                <h4><i class="fas fa-language"></i> Languages</h4>
+                                <div class="language-progress">
+                                    <div class="language-item">
+                                        <div class="language-label">
+                                            <span>English</span>
+                                            <span>Professional proficiency</span>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="language-item">
+                                        <div class="language-label">
+                                            <span>Chinese (Mandarin)</span>
+                                            <span>Native/Bilingual</span>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: roy792001@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Canberra, Australia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Zhijian Ke. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 脚本 -->
+    <script>
+        // 汉堡菜单功能
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // 图片轮播功能 - 平滑过渡效果
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        
+        // 初始化显示第一张图片
+        function initSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[0].style.display = "block";
+        }
+        
+        function showSlides() {
+            // 隐藏当前幻灯片（添加淡出效果）
+            slides[slideIndex].style.opacity = "0";
+            slides[slideIndex].style.transition = "opacity 1s ease-in-out";
+            
+            // 增加索引并循环
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            
+            // 显示下一张幻灯片（添加淡入效果）
+            slides[slideIndex].style.display = "block";
+            
+            // 延迟一小段时间后开始淡入
+            setTimeout(() => {
+                slides[slideIndex].style.opacity = "1";
+                slides[slideIndex].style.transition = "opacity 1s ease-in-out";
+            }, 10);
+            
+            // 设置4秒后自动切换到下一张幻灯片
+            setTimeout(showSlides, 4000);
+        }
+        
+        // 初始化轮播
+        initSlides();
+        setTimeout(showSlides, 4000);
+    </script>
+</body>
+</html>

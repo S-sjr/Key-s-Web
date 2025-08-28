@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance - Zhijian Ke Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Ke's Portfolio</a>
+            <button class="hamburger-btn" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 项目详情内容 -->
+    <main class="project-detail">
+        <div class="container">
+            <h1>Resonance</h1>
+            <div class="project-meta">
+                <span class="date">UC Architecture Master 2025 May</span>
+                <span class="category">Architecture Studio 3</span>
+            </div>
+            
+            <div class="project-content">
+                <!-- 项目轮播图 -->
+                <div id="project-slider" class="project-slideshow-container">
+                    <!-- 轮播图图片 -->
+                    <div class="project-slide active">
+                        <img src="asset/img/Project 3/1.jpg" alt="Resonance Image 1">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/2.jpg" alt="Resonance Image 2">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/3.jpg" alt="Resonance Image 3">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/4.jpg" alt="Resonance Image 4">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/5.jpg" alt="Resonance Image 5">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/6.jpg" alt="Resonance Image 6">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/7.jpg" alt="Resonance Image 7">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/8.jpg" alt="Resonance Image 8">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/9.jpg" alt="Resonance Image 9">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/10.jpg" alt="Resonance Image 10">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/11.jpg" alt="Resonance Image 11">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 3/12.jpg" alt="Resonance Image 12">
+                    </div>
+                    
+                    <!-- 轮播图控制按钮 -->
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+                    
+                    <!-- 轮播图指示器 -->
+                    <div class="slide-indicators">
+                        <span class="slide-indicator active"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                    </div>
+                </div>
+                
+                <!-- 项目信息卡片 -->
+                <div class="project-info-cards">
+                    <div class="project-info-card">
+                        <h3>Instructor</h3>
+                        <p>Ann Cleary</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Site</h3>
+                        <p>Woden, Canberra</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Building Area</h3>
+                        <p>5000㎡</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Type</h3>
+                        <p>Individual Work</p>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    
+                    <h2>Project Overview</h2>
+                    <p>Resonance reimagines the vibrant mural culture of Woden as an architectural and spatial strategy. Rather than treating graffiti as surface decoration, the design abstracts the positions and energies of existing street murals into a conceptual diagram. This invisible framework organizes program, shapes form, and choreographs circulation across the site.</p>
+                    <p>The building is composed of three volumes — for performance, training, and support — arranged in response to this mural-based geometry. Vertical circulation elements, such as staircases and elevators, follow these hidden mural paths, turning movement itself into a central architectural theme. Space is experienced not through static boundaries but through flows, transitions, and rhythm.</p>
+                    <p>A translucent polycarbonate skin enhances this spatial reading. Light, bodies, and motion animate the façade from within, as users walking, climbing, and leaping appear as fleeting shadows. Over time, these silhouettes create a living mural made of presence and movement. Resonance does not depict murals; it becomes one.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Zhijian Ke. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 汉堡菜单脚本 -->
+    <script>
+        // 汉堡菜单功能
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+    <!-- 轮播图脚本 -->
+    <script src="js/slider.js"></script>
+</body>
+</html>

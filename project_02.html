@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMBUE - Zhijian Ke Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Ke's Portfolio</a>
+            <button class="hamburger-btn" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 项目详情内容 -->
+    <main class="project-detail">
+        <div class="container">
+            <h1>IMBUE</h1>
+            <div class="project-meta">
+                <span class="date">UC Architecture Master 2024 Semester 1</span>
+                <span class="category">Architecture Laboratory</span>
+            </div>
+            
+            <div class="project-content">
+                <!-- 项目轮播图 -->
+                <div id="project-slider" class="project-slideshow-container">
+                    <!-- 轮播图图片 -->
+                    <div class="project-slide active">
+                        <img src="asset/img/Project 2/1.jpg" alt="Project Image 1">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/2.jpg" alt="Project Image 2">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/3.jpg" alt="Project Image 3">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/4.jpg" alt="Project Image 4">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/5.jpg" alt="Project Image 5">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/6.jpg" alt="Project Image 6">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 2/7.jpg" alt="Project Image 7">
+                    </div>
+                    
+                    <!-- 轮播图控制按钮 -->
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+                    
+                    <!-- 轮播图指示器 -->
+                    <div class="slide-indicators">
+                        <span class="slide-indicator active"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                    </div>
+                </div>
+                
+                <!-- 项目信息卡片 -->
+                <div class="project-info-cards">
+                    <div class="project-info-card">
+                        <h3>Instructor</h3>
+                        <p>Ann Cleary</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Site</h3>
+                        <p>City, Canberra, Australia</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Building Area</h3>
+                        <p>400㎡</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Type</h3>
+                        <p>Individual Work</p>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    
+                    <h2>Project Overview</h2>
+                    <p>At the heart of City Hill, Imbue is a water-based landscape installation designed to cool, soothe, and connect. By harnessing the natural rhythm of water flow and circulation, the project aims to alleviate the urban heat island effect and restore balance within the surrounding environment.</p>
+                    <p>More than an architectural gesture, Imbue creates a refuge within the city — a tranquil space where residents, workers, and visitors can pause, breathe, and reconnect with nature. The gentle play of light and water, combined with thoughtfully designed shaded zones, transforms the installation into both an urban sanctuary and a climatic response.</p>
+                    <p>Merging landscape, architecture, and ecology, Imbue celebrates the cooling power of water while inviting people to slow down, reflect, and immerse themselves in an evolving dialogue between the built environment and the natural world.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Zhijian Ke. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 汉堡菜单脚本 -->
+    <script>
+        // 汉堡菜单功能
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+    <!-- 轮播图脚本 -->
+    <script src="js/slider.js"></script>
+</body>
+</html>

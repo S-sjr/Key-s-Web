@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Garden - Zhijian Ke Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Ke's Portfolio</a>
+            <button class="hamburger-btn" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 项目详情内容 -->
+    <main class="project-detail">
+        <div class="container">
+            <h1>Hidden Garden</h1>
+            <div class="project-meta">
+                <span class="date">July 2022 Competition Submissions</span>
+                <span class="category">Art Gallery</span>
+            </div>
+            
+            <div class="project-content">
+                <!-- 项目轮播图 -->
+                <div id="project-slider" class="project-slideshow-container">
+                    <!-- 轮播图图片 -->
+                    <div class="project-slide active">
+                        <img src="asset/img/Project 5/1.jpg" alt="Vortex Image 1">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/2.jpg" alt="Vortex Image 2">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/3.jpg" alt="Vortex Image 3">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/4.jpg" alt="Vortex Image 4">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/5.jpg" alt="Vortex Image 5">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/6.jpg" alt="Vortex Image 6">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/7.jpg" alt="Vortex Image 7">
+                    </div>
+                    <div class="project-slide">
+                        <img src="asset/img/Project 5/8.jpg" alt="Vortex Image 8">
+                    </div>
+                    
+                    <!-- 轮播图控制按钮 -->
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+                    
+                    <!-- 轮播图指示器 -->
+                    <div class="slide-indicators">
+                        <span class="slide-indicator active"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                        <span class="slide-indicator"></span>
+                    </div>
+                </div>
+                
+                <!-- 项目信息卡片 -->
+                <div class="project-info-cards">
+                    <div class="project-info-card">
+                        <h3>Co-team member</h3>
+                        <p>Henry Liu</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Location</h3>
+                        <p>Chaoyang District, Beijing, China</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Building Area</h3>
+                        <p>1800㎡</p>
+                    </div>
+                    <div class="project-info-card">
+                        <h3>Type</h3>
+                        <p>Cooperative work</p>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    
+                    <h2>Project Overview</h2>
+                    <p>Hidden Garden is an art gallery located within a residential community in Beijing's Chaoyang District. Inspired by the spatial composition of classical Chinese gardens, the design combines traditional courtyard aesthetics with a modern minimalist facade to create a tranquil artistic sanctuary within the city.</p>
+                    <p>Five square volumes are arranged in a staggered layout, enclosing a central courtyard that serves as the heart of the experience. This layered composition evokes the memory and philosophy of traditional Chinese courtyards — a "hidden beauty" that gradually unfolds as visitors move through framed views, shifting light, and shadow.</p>
+                    <p>The program integrates flexible exhibition areas, interactive zones that foster audience engagement, and intimate relaxation spaces. White facades paired with glass create a refined, elegant aesthetic, while abundant greenery and water features form a natural ecological environment.</p>
+                    <p>Hidden Garden is more than a venue for art; it is a platform for cultural exchange and contemplation. By weaving together, the traditions of Chinese garden design with modern architectural language, the project offers an immersive and timeless journey into space, nature, and memory.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Zhijian Ke. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 汉堡菜单脚本 -->
+    <script>
+        // 汉堡菜单功能
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+    <!-- 轮播图脚本 -->
+    <script src="js/slider.js"></script>
+</body>
+</html>
