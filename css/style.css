@@ -486,6 +486,12 @@ body {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* 为容器添加最小高度，确保图片有足够的显示空间 */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
 }
 
 .project-slide {
@@ -499,10 +505,14 @@ body {
 }
 
 .project-slide img {
-    width: 100%;
-    height: auto;
+    /* 对于所有图片，确保完整显示，保持原始比例 */
+    max-width: 100%;
     max-height: 600px;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 /* 轮播图控制按钮 */
